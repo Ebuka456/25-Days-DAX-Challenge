@@ -26,4 +26,6 @@ I am excited to contribute to this challenge by sharing my solutions and engagin
 ### Let's Get Started! 🎖️
 Now that you have the overview, let's dive into the 25-Day DAX Challenge. Get ready to explore the world of DAX and enhance your data analysis capabilities. Happy coding!
 
+To Participate in the challenge, check here: [Challenge](https://curbal.com/25-days-of-dax-fridays-challenge-ed1-northwind-company)
+
 Note: This challenge is designed for educational and skill development purposes. It is not affiliated with or endorsed by any specific organization or platform.
