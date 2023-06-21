@@ -1,6 +1,9 @@
 # 25 Days DAX Challenge
 Welcome to the 25-Day DAX Challenge! This repository contains my solutions and contributions for each day of the challenge.
 
+<img src="https://github.com/Ebuka456/25-Days-DAX-Challenge/blob/main/Dax%20images.png" alt="Alt text" style= "width: 750px; height: 400px"/>
+
+
 ## What is DAX? 
 DAX (Data Analysis Expressions) is a powerful formula language used in Microsoft Power BI, Excel, and Analysis Services. It allows you to create calculations, define measures, and perform advanced data manipulation tasks.
 
