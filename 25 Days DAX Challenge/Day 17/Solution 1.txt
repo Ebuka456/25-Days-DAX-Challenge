@@ -1,0 +1,11 @@
+Day 17 = 
+COUNTROWS(
+    FILTER(
+        SUMMARIZE(Products, 
+                Products[ProductName], 
+                "Reorder level" , SUM(Products[ReorderLevel]), 
+                "Stocked Units", SUM(Products[UnitsInStock])
+                ),
+        [Reorder level] > [Stocked Units]
+    )
+)

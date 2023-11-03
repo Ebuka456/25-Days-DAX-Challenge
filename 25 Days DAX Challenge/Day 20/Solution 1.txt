@@ -1,0 +1,6 @@
+Day 20 = 
+    TOPN(1,
+    VALUES(Suppliers[CompanyName]),
+    CALCULATE(SUMX(Products, Products[UnitPrice] * Products[UnitsInStock])),
+    DESC
+)

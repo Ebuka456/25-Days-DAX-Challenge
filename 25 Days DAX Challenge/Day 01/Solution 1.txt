@@ -1,0 +1,6 @@
+Day 1 = 
+VAR filtered = FILTER(Products, [Unit Price] < 20)
+VAR filtered2 = FILTER(filtered, Products[Discontinued] = False)
+VAR counts = COUNTX(filtered2, Products[ProductID])
+RETURN
+counts

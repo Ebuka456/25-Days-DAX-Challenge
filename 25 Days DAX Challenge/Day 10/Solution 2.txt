@@ -1,0 +1,9 @@
+Day 10 part = 
+CALCULATE(
+    DATEDIFF(
+        LASTDATE(Orders[OrderDate]),
+        TODAY(),
+        DAY
+    ),
+    Customers[CompanyName] = "North/South"
+)

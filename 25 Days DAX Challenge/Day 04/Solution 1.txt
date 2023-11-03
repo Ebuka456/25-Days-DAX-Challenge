@@ -1,0 +1,7 @@
+Day 4 = 
+VAR avgs = CALCULATE(AVERAGE(Products[UnitPrice]),
+                     ALL(Products[ProductName]),
+                     ALL(Products[ProductID])
+)
+VAR filtered = FILTER(Products, Products[UnitPrice] > avgs)
+RETURN COUNTROWS(filtered)

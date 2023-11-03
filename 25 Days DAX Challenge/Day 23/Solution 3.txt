@@ -1,0 +1,8 @@
+Day 23 part 2 = 
+    TOPN(1,
+    VALUES(Employees[Full Name]),
+    SUMX(
+        CALCULATETABLE(Orders, 'Calendar'[Year] = 2021),
+        Orders[UnitPrice] * Orders[Quantity]
+    ),
+    DESC)

@@ -1,0 +1,6 @@
+Day 2 part = 
+TOPN(
+    1,
+    VALUES(Products[ProductName]),
+    CALCULATE([Unit Price], Products[Discontinued] = False),
+    DESC)

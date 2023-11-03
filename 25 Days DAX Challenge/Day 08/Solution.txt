@@ -1,0 +1,12 @@
+Day 8 = 
+VAR tune = SUMMARIZE(
+            Orders, 
+            Orders[OrderID], 
+            "ProdCount", 
+            COUNTA(Orders[ProductID])
+            )
+VAR filtered = FILTER(tune, 
+                [ProdCount] = 1
+                )
+RETURN 
+    COUNTROWS(filtered)

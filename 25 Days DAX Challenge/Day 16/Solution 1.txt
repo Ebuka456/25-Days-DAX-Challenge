@@ -1,0 +1,4 @@
+Day 16 = 
+ COUNTAX(
+     FILTER(Products, Products[UnitsInStock] = 0),
+     Products[ProductName])

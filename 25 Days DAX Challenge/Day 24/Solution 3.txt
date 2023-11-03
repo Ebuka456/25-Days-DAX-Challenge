@@ -1,0 +1,12 @@
+Day 24 part 2 = 
+VAR CurrentYear = Year(TODAY())
+RETURN
+CALCULATE(    
+    COUNTROWS(    
+        FILTER(
+            VALUES(Employees[Full Name]),
+            [Total sales] >= 100000
+        )
+    ),
+    'Calendar'[Year] = CurrentYear
+)

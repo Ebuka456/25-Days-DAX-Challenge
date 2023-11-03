@@ -1,0 +1,6 @@
+Day 1 part = 
+CALCULATE(COUNTA(Products[ProductName]), 
+        FILTER(Products, [Unit Price] < 20 && Products[Discontinued] = False()
+    )        
+)
+        

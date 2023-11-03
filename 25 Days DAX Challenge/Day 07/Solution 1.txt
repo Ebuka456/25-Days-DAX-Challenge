@@ -1,0 +1,5 @@
+Day 7 = 
+    CALCULATE(
+        SUM(Orders[_Sales]), 
+        Orders[ShippedDate] = BLANK()
+        )

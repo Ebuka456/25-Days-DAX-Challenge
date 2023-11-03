@@ -1,0 +1,8 @@
+Day 22 = 
+    COUNTROWS(FILTER(
+        SUMMARIZE(Employees,
+                Employees[Full Name], 
+                Employees[BirthDate], 
+                "Age", ROUNDDOWN(YEARFRAC(Employees[BirthDate], TODAY(), 1), 0)),
+                [Age] >= 60)
+    )

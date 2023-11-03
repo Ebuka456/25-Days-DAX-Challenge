@@ -1,0 +1,8 @@
+Day 17 part = 
+CALCULATE(
+    DISTINCTCOUNT(Products[ProductName]),
+    FILTER(
+        Products, 
+        Products[UnitsInStock] < [Restock level]
+        )
+    )

@@ -1,0 +1,5 @@
+Day 4 Part = 
+VAR avgp = AVERAGE(Products[UnitPrice])
+RETURN CALCULATE(COUNT(Products[ProductName]),
+          FILTER(Products, Products[UnitPrice] > avgp)
+)

@@ -1,0 +1,6 @@
+Day 2 = 
+TOPN(
+    1,
+    VALUES(Products[ProductName]),
+    CALCULATE([Unit Price]),
+    DESC)

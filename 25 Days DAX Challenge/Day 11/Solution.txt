@@ -1,0 +1,6 @@
+Day 11 = 
+VAR tune = SUMMARIZE(Orders, 
+                Orders[CustomerID], 
+                "Count", DISTINCTCOUNT(Orders[OrderID]))
+VAR filtered = FILTER(tune, [Count] = 1)
+RETURN COUNTROWS(filtered)

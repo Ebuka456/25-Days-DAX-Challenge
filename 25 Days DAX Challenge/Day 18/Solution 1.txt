@@ -1,0 +1,10 @@
+Day 18 = 
+COUNTROWS(
+    FILTER(
+        SUMMARIZE(Products, Products[ProductName], 
+                "unit in order", SUM(Products[UnitsOnOrder]),
+                    "Unit in stock", SUM(Products[UnitsInStock])
+                    ),
+        [Units In Order] > [Unit in stock]
+    )
+)

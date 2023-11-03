@@ -1,0 +1,8 @@
+Day 19 = 
+SUMX(
+    FILTER(
+        Products, 
+        Products[Discontinued] = TRUE()
+        ),
+    Products[UnitsInStock] * Products[UnitPrice]
+)

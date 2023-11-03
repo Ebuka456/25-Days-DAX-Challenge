@@ -1,0 +1,5 @@
+Day 14 part = 
+var customers_all = DISTINCTCOUNT(Customers[CustomerID])
+var queso_customers = CALCULATE(DISTINCTCOUNT(Orders[CustomerID]), Orders[ProductID] = 11)
+return 
+customers_all - queso_customers

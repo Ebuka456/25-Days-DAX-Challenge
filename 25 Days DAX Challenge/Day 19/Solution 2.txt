@@ -1,0 +1,6 @@
+Day 19 Part = 
+    CALCULATE(
+        SUMX(Products,
+            Products[UnitPrice] * Products[UnitsInStock]),
+            Products[Discontinued] = TRUE()
+    )

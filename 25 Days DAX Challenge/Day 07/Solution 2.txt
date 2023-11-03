@@ -1,0 +1,6 @@
+Day 7 part = 
+    SUMX(
+        FILTER(Orders, 
+        ISBLANK(Orders[ShippedDate])),
+        Orders[_Sales]
+        )

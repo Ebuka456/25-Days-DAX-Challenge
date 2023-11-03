@@ -1,0 +1,5 @@
+Day 5 = 
+    CALCULATE(COUNTA(Products[ProductID]), 
+        FILTER(Products, Products[UnitPrice] >= 15),
+        FILTER(Products, Products[UnitPrice] <= 25)
+)

@@ -1,0 +1,8 @@
+Day 22 Part = 
+var table1 = SUMMARIZE(Employees,
+                        Employees[Full Name],
+                        "Age", INT(YEARFRAC(MAX(Employees[BirthDate]), TODAY()))
+    )
+VAR tables2 = FILTER(table1, [Age] >= 60)
+    RETURN 
+        COUNTROWS(tables2)

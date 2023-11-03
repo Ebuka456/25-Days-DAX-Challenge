@@ -1,0 +1,6 @@
+Day 14 = 
+    SUMX(Customers,
+    IF(
+    ISBLANK(
+    CALCULATE([Total sales], Products[ProductName] = "Queso Cabrales")), 1, 0)
+    )

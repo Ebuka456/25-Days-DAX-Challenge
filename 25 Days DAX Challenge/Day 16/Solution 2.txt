@@ -1,0 +1,5 @@
+Day 16 part = 
+CALCULATE(
+    COUNTA(Products[ProductID]),
+    Products[UnitsInStock] = 0
+)

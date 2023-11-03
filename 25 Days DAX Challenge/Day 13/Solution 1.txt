@@ -1,0 +1,5 @@
+Day 13 = 
+VAR two = FILTER(
+            SUMMARIZE(Orders, Orders[CustomerID], "min_date", MAX(Orders[OrderDate])),
+            YEAR([min_date]) <> 2021)
+RETURN COUNTROWS(two)

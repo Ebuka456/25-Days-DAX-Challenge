@@ -1,0 +1,12 @@
+Day 20 part = 
+    SUMMARIZE(
+        TOPN(1,
+        SUMMARIZE(
+            Products, 
+            Suppliers[CompanyName], 
+            "stocked value", SUMX(Products, Products[UnitsInStock] * Products[UnitPrice])
+            ),
+        [stocked value],
+        DESC),
+    Suppliers[CompanyName]
+    )

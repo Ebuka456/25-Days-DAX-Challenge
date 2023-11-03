@@ -1,0 +1,7 @@
+Day 16 part 2 = 
+COUNTROWS(
+    FILTER(
+        SUMMARIZE(Products, Products[ProductName], "In Stock", SUM(Products[UnitsInStock])),
+        [In Stock] = 0
+    )
+)

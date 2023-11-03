@@ -1,0 +1,4 @@
+Day 3 part = 
+VAR summed = [Unit Price]
+ VAR counted = DISTINCTCOUNT(Products[ProductID])
+ RETURN DIVIDE(summed, counted)

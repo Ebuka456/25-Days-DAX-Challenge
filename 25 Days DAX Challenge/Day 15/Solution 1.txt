@@ -1,0 +1,24 @@
+Day 15 = 
+var table1 =
+SUMMARIZE(
+    FILTER(
+        SUMMARIZE(Orders, Orders[OrderID], Orders[CustomerID], 
+            "distinct_order", COUNTA(Orders[ProductID])), 
+        [distinct_order] = 1),
+    Orders[OrderID], Orders[CustomerID]
+    )
+
+var table2 =
+SUMMARIZE(
+    FILTER(
+        SUMMARIZE(Orders, Orders[CustomerID],Orders[OrderID], Orders[ProductID]), 
+        Orders[ProductID] = 11),
+    Orders[OrderID], Orders[CustomerID]
+    )
+
+RETURN 
+COUNTROWS(
+    DISTINCT(
+        INTERSECT(table1, table2)
+    )
+)

@@ -1,0 +1,9 @@
+Day 24 = 
+COUNTROWS(
+    FILTER(    
+        SUMMARIZE(Orders, Employees[Full Name], 'Calendar'[Year], "Total Sales", 
+                SUMX(Orders, Orders[Quantity] * Orders[UnitPrice])
+        ),
+        AND([Total Sales] >= 100000, 'Calendar'[Year] = 2023)
+    )
+)

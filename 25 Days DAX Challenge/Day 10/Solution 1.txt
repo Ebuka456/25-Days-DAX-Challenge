@@ -1,0 +1,8 @@
+Day 10 = 
+VAR maxdate = MAXX(
+                FILTER(Orders,
+                    RELATED(Customers[CompanyName]) = "North/South"),
+                Orders[OrderDate])
+VAR todayed = TODAY()
+RETURN 
+    DATEDIFF(maxdate, todayed, DAY)

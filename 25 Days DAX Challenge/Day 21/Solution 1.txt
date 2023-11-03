@@ -1,0 +1,18 @@
+Day 21 Solution = 
+    VAR female = CALCULATE(
+                    COUNTROWS(Employees),
+                    Employees[Gender] = "Female"
+    )
+
+    VAR Employee = CALCULATE(
+                    COUNTROWS(Employees),
+                    ALL(Employees)
+    )
+
+    VAR ration = ROUND(
+                    DIVIDE(female, Employee),
+                    2
+    )
+
+    RETURN 
+        FORMAT(ration, "Percent")

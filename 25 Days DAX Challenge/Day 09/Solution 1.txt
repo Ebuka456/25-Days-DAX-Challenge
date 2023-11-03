@@ -1,0 +1,10 @@
+Day 9 = 
+ CALCULATE(
+    DIVIDE(
+        SUM(Orders[_Sales]),
+     DISTINCTCOUNT(Orders[OrderID])
+     ),
+    FILTER(Customers, 
+    Customers[CompanyName] = "Romero y tomillo"
+    )
+)

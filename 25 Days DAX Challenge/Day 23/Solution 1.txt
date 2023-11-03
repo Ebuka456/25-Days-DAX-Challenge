@@ -1,0 +1,13 @@
+Day 23 = 
+ VAR subs = SUMMARIZE(Orders, Employees[Full Name], 'Calendar'[Year], 
+        "sales done", SUMX(Orders, Orders[UnitPrice] * Orders[Quantity]))
+ VAR subse = FILTER(subs, 'Calendar'[Year] = 2021)
+ VAR named = TOPN(1, 
+        subse,
+        [sales done], 
+        DESC)
+VAR employee_2021 =  SUMMARIZE(
+        named,
+        Employees[Full Name])
+
+RETURN employee_2021

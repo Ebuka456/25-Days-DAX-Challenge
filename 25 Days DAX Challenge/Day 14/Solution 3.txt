@@ -1,0 +1,7 @@
+Day 14 part 2 = 
+var allcustomer = VALUES(Customers[CustomerID])
+var quesocustomer = CALCULATETABLE(VALUES(Orders[CustomerID]), Orders[ProductID] = 11)
+RETURN
+    CALCULATE(DISTINCTCOUNT(Customers[CustomerID]), 
+            EXCEPT(allcustomer, quesocustomer)
+        ) 

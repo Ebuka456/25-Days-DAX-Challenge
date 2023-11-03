@@ -1,0 +1,5 @@
+Day 24 part = 
+VAR sold = CALCULATETABLE(Orders, 'Calendar'[Year] = 2023)
+VAR ids = FILTER(SUMMARIZE(sold, Orders[EmployeeID], "Totally", [Total sales]), [Totally] >= 100000)
+RETURN 
+COUNTROWS(ids)

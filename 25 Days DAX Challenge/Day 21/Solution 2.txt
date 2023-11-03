@@ -1,0 +1,10 @@
+Day 21 Part = 
+    FORMAT(
+        DIVIDE(
+            CALCULATE(COUNTA(Employees[Gender]), 
+                        Employees[Gender] = "Female"
+                        ),
+            COUNTA(Employees[EmployeeID])
+        ),
+        "0%"
+    )

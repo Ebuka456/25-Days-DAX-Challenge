@@ -1,0 +1,10 @@
+Day 25 = 
+VAR employee = CALCULATETABLE(
+        SUMMARIZE(
+            Employees,
+            Employees[Full Name], Employees[HireDate]
+            ), 
+            YEAR(Employees[HireDate]) = 1994
+    )
+RETURN 
+COUNTROWS(employee)
